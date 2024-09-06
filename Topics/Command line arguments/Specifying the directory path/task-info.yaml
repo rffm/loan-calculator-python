@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: <code>python ../add_numbers.py 295 42</code>
+  - text: <code>python add_numbers.py 295 42</code>
+  - text: <code>python 295 42 /add_numbers.py</code>
+  - text: <code>python 295 42 ./add_numbers.py</code>
+files:
+  - name: main.py
+    visible: true
+    text: |+
+      #  You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7983#comment
+status: Solved
+record: -1
+local_check: false

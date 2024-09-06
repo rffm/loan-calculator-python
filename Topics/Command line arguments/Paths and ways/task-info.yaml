@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - <code>python add_strings.py Davy Jones</code>
+  - <code>python C:\scripts\add_strings.py Will Turner</code>
+  - <code>python ...\add_strings.py Captain Jack Sparrow</code>
+options:
+  - The absolute path is provided.
+  - The relative path is specified.
+  - The script is in the current working directory.
+files:
+  - name: main.py
+    visible: true
+    text: |+
+      #  You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15141#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2

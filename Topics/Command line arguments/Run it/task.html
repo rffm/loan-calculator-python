@@ -1,0 +1,25 @@
+<h2>Run it</h2>
+<div class="step-text">
+<p></p>
+<p>Below is a module <code class="language-python">count_empty.py</code> that counts the number of empty strings in the given file, starting from the given line index.</p>
+<pre><code class="language-python">import sys 
+
+args = sys.argv 
+if len(args) == 3:
+    file_name = args[1]
+    start = int(args[2])
+
+    with open(file_name) as inp:
+        counter = 0
+        for i, line in enumerate(inp):
+            if i &lt; start:
+                continue
+            if not line.strip():
+                counter += 1
+
+    print(counter)
+else:
+    print("The number of passed arguments is incorrect. ")</code></pre>
+<p>How would you run it from the command line? Let's say you want to check the file <code class="language-python">test.txt</code> that is in the same directory as the script, and you want to start from the line with index<strong> 101</strong>.</p>
+<p><b>Tip:</b> You don't need to look at the code in detail, you just need to understand what arguments the script takes.</p>
+</div>
